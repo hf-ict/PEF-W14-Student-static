@@ -2,36 +2,36 @@
 public class Student {
 	
 	private int id;
-	private String nachname;
-	private String vorname;
-	private double notenschnitt;
+	private String lastname;
+	private String firstname;
+	private double gradeAverage;
 	
-	public Student(int id, String nachname, String vorname, double notenschnitt) {
+	public Student(int id, String lastname, String firstname, double gradeAverage) {
 		this.id = id;
-		this.nachname = nachname;
-		this.vorname = vorname;
-		this.notenschnitt = notenschnitt;
+		this.lastname = lastname;
+		this.firstname = firstname;
+		this.gradeAverage = gradeAverage;
 	}
 
 	public long getId() {
 		return id;
 	}
 
-	public String getNachname() {
-		return nachname;
+	public String getLastname() {
+		return lastname;
 	}
 
-	public String getVorname() {
-		return vorname;
+	public String getFirstname() {
+		return firstname;
 	}
 
-	public double getNotenschnitt() {
-		return notenschnitt;
+	public double getGradeAverage() {
+		return gradeAverage;
 	}
 	
 	@Override
 	public String toString() {
-		return "Student [id=" + id + ", nachname=" + nachname + ", vorname=" + vorname + ", notenschnitt="
-				+ notenschnitt + "]";
+		return "Student [id=" + id + ", nachname=" + lastname + ", vorname=" + firstname + ", notenschnitt="
+				+ gradeAverage + "]";
 	}
 }
